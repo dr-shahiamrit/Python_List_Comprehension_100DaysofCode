@@ -48,3 +48,22 @@ print(short_names)
 upperCase = [name.upper() for name in names if len(name) > 5]
 print(upperCase)
 
+# Instructions - You are going to write a List Comprehension to create a
+#new list called squared_numbers. This new list should contain every number
+#in the list number in the list numbers but each number should be squared.
+
+# e.g 4*4 = 16
+# 4 squared equals to 16.
+
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+squared_numbers = [data**2 for data in numbers]
+print(squared_numbers)
+
+# Instructions
+#  You are going to write a List Comprehension to create a new list called result. This new list should only
+#  contain the even numbers from the list numbers.
+# Example Output [2, 8, 34]
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+result = [data for data in numbers if data % 2 == 0]
+print(result)
+
